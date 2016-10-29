@@ -7,6 +7,51 @@
         mc:Ignorable="d"
         Title="User Searcher" Height="600" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
+        <ToolBarTray DockPanel.Dock="Top" Height="30" VerticalAlignment="Top">
+            <ToolBar x:Name="toolBar" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Height="30">
+                <Button x:Name="btnSearch" Height="25" VerticalAlignment="Top" Width="50" ToolTip="Click to open Search">
+                    <Image Source="/Images/find.png" />
+                </Button>
+                <Button x:Name="btnAdd" Height="25" VerticalAlignment="Top" Width="50">
+                    <Image Source="/Images/plus.png" ToolTip="Click to open Add" />
+                </Button>
+            </ToolBar>
+        </ToolBarTray>
+        <Grid Margin="0,30,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="300" MaxWidth="600" Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition MinWidth="500" Width="*"/>
+            </Grid.ColumnDefinitions>
+            <GridSplitter
+            Width="2"
+            Grid.Column="1"
+            HorizontalAlignment="Center"
+            Margin="0,5,0,5"
+            Panel.ZIndex="1"
+            VerticalAlignment="Stretch"
+            ResizeBehavior="BasedOnAlignment"
+            ResizeDirection="Columns"/>
+            <Grid Grid.Column="0">
+                <TabControl x:Name="tabControl" HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch" >
+                    <TabItem Header="Search">
+                        <Grid Background="#fff">
+                            <TextBox x:Name="textBox" Height="23" Margin="10,35,70,0" TextWrapping="Wrap" VerticalAlignment="Top" />
+                            <Label x:Name="label" Content="Enter name for searching:" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top"/>
+                            <Button x:Name="btnSearch_Copy" Height="23" HorizontalAlignment="Right" VerticalAlignment="Top" ToolTip="Click to search" Width="50" Margin="0,35,10,0">
+                                <Image Source="Images/find.png" />
+                            </Button>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Add">
+                        <Grid Background="#fff"/>
+                    </TabItem>
+                </TabControl>
 
+            </Grid>
+            <Grid Grid.Column="2">
+
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
