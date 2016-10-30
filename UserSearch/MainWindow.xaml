@@ -39,7 +39,7 @@
                     <TabItem Header="Add User">
                         <Grid Background="#fff">
                             <Border BorderThickness="1" BorderBrush="Gray" VerticalAlignment="Top" Margin="10,10,0,0"  Width="100" Height="100" HorizontalAlignment="Left" >
-                                <Image x:Name="userImage" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Cursor="Hand" />
+                                <Image x:Name="imgUser" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Cursor="Hand" />
                             </Border>
 
                             <TextBox x:Name="txtFullname" Height="23" Margin="115,28,10,0" TextWrapping="Wrap" VerticalAlignment="Top" />
