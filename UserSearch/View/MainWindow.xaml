@@ -9,7 +9,7 @@
         d:DataContext="{ d:DesignInstance ViewModel:UIHelper }"
         mc:Ignorable="d"
         Title="User Searcher" Height="600" Width="800" MinWidth="800" MinHeight="600" WindowStartupLocation="CenterScreen">
-    
+
     <Window.DataContext>
         <ViewModel:UIHelper/>
     </Window.DataContext>
@@ -19,7 +19,7 @@
             <intr:InvokeCommandAction Command="{Binding WindowLoaded}"/>
         </intr:EventTrigger>
     </intr:Interaction.Triggers>
-    
+
     <Grid Margin="0,0,5,5">
         <ToolBarTray DockPanel.Dock="Top" Height="30" VerticalAlignment="Top">
             <ToolBar x:Name="toolBar" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Height="30">
@@ -48,6 +48,8 @@
                             <Button x:Name="btnInstantSearch" Height="23" HorizontalAlignment="Right" VerticalAlignment="Top" ToolTip="Click to search" Width="50" Margin="0,35,10,0" Command="{Binding SearchNameCommand}" >
                                 <Image Source="/Images/find.png" />
                             </Button>
+                            <ProgressBar x:Name="prgDbProgressor" HorizontalAlignment="Left" Height="15" Margin="10,75,70,0" VerticalAlignment="Top" Width="214" Value="35" Visibility="{Binding ProgressVisibility}" IsIndeterminate="True"/>
+
                         </Grid>
                     </TabItem>
                     <TabItem Header="Add User">
