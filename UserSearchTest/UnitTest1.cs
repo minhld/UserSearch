@@ -1,6 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+using UserSearch.ViewModel;
+using UserSearch.Model;
+
 namespace UserSearchTest
 {
     [TestClass]
@@ -9,6 +12,8 @@ namespace UserSearchTest
         [TestMethod]
         public void TestMethod1()
         {
+            DbHelper helper = new DbHelper();
+            List<> helper.getAllUsers();
         }
     }
 }

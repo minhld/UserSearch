@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace UserSearch.Model
 {
-    class DbHelper
+    public class DbHelper
     {
         /// <summary>
         /// Db context holder
