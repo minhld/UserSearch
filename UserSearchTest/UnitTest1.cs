@@ -1,7 +1,7 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace SearchUnitTest
+namespace UserSearchTest
 {
     [TestClass]
     public class UnitTest1
