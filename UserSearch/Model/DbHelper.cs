@@ -18,8 +18,8 @@ namespace UserSearch.Model
         public void initDb()
         {
             // Start db empty data - this will be removed later
-            // removeAllUsers();
-            // seedData();
+            removeAllUsers();
+            seedData();
         }
 
         /// <summary>
@@ -29,10 +29,10 @@ namespace UserSearch.Model
         {
             // adding some beginning data
             addUser(new User() { Fullname = "Minh Le", Age = 33, Address = "Logan, USA", Interests = "Rice" });
-            addUser(new User() { Fullname = "AnBa Nguyen", Age = 30, Address = "Logan, USA", Interests = "Everything" });
-            addUser(new User() { Fullname = "Oanh Lethuy", Age = 36, Address = "Seoul, South Korea", Interests = "Clothes" });
-            addUser(new User() { Fullname = "Thuy Lethi", Age = 45, Address = "Seoul, South Korea", Interests = "Houses" });
-            addUser(new User() { Fullname = "Bach Le", Age = 1, Address = "5 Aggie, USA", Interests = "Toys" });
+            addUser(new User() { Fullname = "Jason Staham", Age = 30, Address = "Los Angeles, USA", Interests = "Movies" });
+            addUser(new User() { Fullname = "Paul Cartney", Age = 36, Address = "Liverpool, England", Interests = "Songs" });
+            addUser(new User() { Fullname = "Minh Ledinh", Age = 45, Address = "Logan, USA", Interests = "Foods" });
+            addUser(new User() { Fullname = "Minh2 Le", Age = 30, Address = "California, USA", Interests = "Songs" });
 
         }
 
