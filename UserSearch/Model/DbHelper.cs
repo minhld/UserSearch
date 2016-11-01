@@ -57,10 +57,16 @@ namespace UserSearch.Model
         /// <returns>1 if user is successfully deleted, otherwise 0</returns>
         public int removeUser(string userId)
         {
-            User user = new User() { UserId = userId };
-            User rmUser = context.Users.Remove(user);
-            context.SaveChanges();
-            return rmUser != null ? 1 : 0;
+            try
+            {
+                context.Users.RemoveRange(context.Users.Where(b => b.UserId == userId));
+                context.SaveChanges();
+                return 1;
+            }
+            catch
+            {
+                return 0;
+            }
         }
 
         public void removeAllUsers()
