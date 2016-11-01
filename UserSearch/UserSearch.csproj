@@ -79,7 +79,6 @@
     <Compile Include="Model\DbHelper.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Model\UserContext.cs" />
-    <Compile Include="Utils\Utils.cs" />
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -88,6 +87,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Utils\Utils.cs" />
     <Compile Include="ViewModel\DelegateCommand.cs" />
     <Compile Include="ViewModel\ObserveObject.cs" />
     <Compile Include="ViewModel\UIHelper.cs" />
@@ -127,7 +127,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\find.png" />
     <Resource Include="Images\plus.png" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +137,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\find.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
